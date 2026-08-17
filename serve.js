@@ -14,4 +14,4 @@ server.on('request', (req, res) => {
 
 server.listen(porta, ()=> {
     console.log(`Servidor ouvindo na porta ${porta}`)
-});
+});console.log(new Date().toISOString())
