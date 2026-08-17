@@ -10,6 +10,7 @@ server.on('request', (req, res) => {
     res.statusCode = 201
     res.setHeader('Content-Type', 'application/json');
     res.end (JSON.stringify({ status: "ok" }));    
+    //  Se tirarmos o "res.end" o servidor vai receber um pedido, mas nunca será enviado uma resposta.//
 });
 
 server.listen(porta, ()=> {
